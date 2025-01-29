@@ -1,0 +1,82 @@
+.upload-blog-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack header and form vertically */
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    text-align: center;
+  }
+  
+  .header {
+    font-size: 2rem;
+    margin-top: 10px;
+    color: rgb(64, 11, 100);
+  }
+  
+  .form-wrapper {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  button {
+    background-color: rgb(231, 127, 231);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: rgb(255, 109, 255);
+    transform: scale(1.01);
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .back {
+    background-color: rgb(85, 3, 102);
+    margin-top: 10px;
+  }
+  
+  .back:hover {
+    background-color: #9f03c2;
+  }
+  
