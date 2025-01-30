@@ -1,17 +1,16 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home";
-import Upload_blog from "./Components/Upload_blog";
-import Retrieve_blog from "./Components/Retrieve_blog";
-
+import Uploadblog from "./Components/Uploadblog";
+import Retrieveblog from "./Components/Retrieveblog";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/upload" element={<Upload_blog/>} />
-        <Route path="/retrieve" element={<Retrieve_blog />} />
+        <Route path="/upload" element={<Uploadblog/>} />
+        <Route path="/retrieve" element={<Retrieveblog/>} />
       </Routes>
     </BrowserRouter>
   );

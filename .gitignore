@@ -1,0 +1,25 @@
+# Ignore node_modules folders in both client and server directories
+/client/node_modules
+/server/node_modules
+
+# Ignore logs
+*.log
+
+# Ignore build directories (if you are using a build tool like Webpack)
+client/build
+server/build
+
+# Ignore environment files
+*.env
+
+# Ignore dependency directories
+client/.env
+server/.env
+
+# Ignore IDE/Editor specific files
+.vscode/
+.idea/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
