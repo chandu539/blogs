@@ -48,6 +48,10 @@
     resize: vertical;
     min-height: 100px;
   }
+  .button-cls{
+    display: inline;
+    gap: 20px;
+  }
   
   button {
     background-color: rgb(231, 127, 231);
@@ -58,9 +62,12 @@
     font-size: 16px;
     cursor: pointer;
     transition: background 0.3s;
-    width: 100%;
+    width: 50%;
   }
-  
+  .submit-btn{
+    background-color: purple;
+    margin-bottom: 10px;
+  }
   button:hover {
     background-color: rgb(255, 109, 255);
     transform: scale(1.01);
@@ -73,7 +80,8 @@
   
   .back {
     background-color: rgb(85, 3, 102);
-    margin-top: 10px;
+   margin-left: 10px;
+   width: 70px;
   }
   
   .back:hover {

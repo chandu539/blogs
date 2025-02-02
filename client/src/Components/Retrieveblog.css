@@ -1,72 +1,166 @@
 .retrieve-blog-container {
-    padding: 20px;
-    background-color: rgb(190, 116, 225);
-    min-height: 100vh;
-    position: relative; 
+  padding: 20px;
+  background-color: rgb(190, 116, 225);
+  min-height: 100vh;
+  position: relative;
+  margin-top: 0;
 }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-family: 'Arial', sans-serif;
-    color: white;
-    font-size: 3rem;
-  }
-  
-  .posts-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 0 10px;
-  }
-  
-  .post-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .post-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .post-card h3 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 15px;
-  }
-  
-  .post-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-  }
-  
-  .post-card p {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.5;
-    text-align: justify;
-  }
-  
-  .loading {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 20px;
-    color: #555;
-  }
-  
-  .error {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 20px;
-    color: #e74c3c;
-  }
-  
-  
-  
+
+.heading-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(190, 116, 225);
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: rgb(244, 243, 244);
+  font-size: 3rem;
+  margin-left: 16%;
+  flex-grow: 1;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: rgb(190, 116, 225);
+  margin-left: auto;
+}
+
+.search-container input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  font-size: 1rem;
+}
+
+.search-button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: rgb(66, 3, 66);
+}
+
+.update-btn {
+  background-color: rgb(85, 3, 102);
+ margin-left: 10px;
+ width: 70px;
+}
+
+.update-btn:hover {
+  background-color: #9f03c2;
+}
+
+.posts-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.post-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.post-card:hover {
+  transform: scale(1.05);
+}
+
+.post-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.post-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.post-card p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.loading {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+}
+
+.error {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20px;
+  color: #e74c3c;
+}
+
+/* Updated Pagination Styles */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.pagination-button {
+  padding: 1px;
+  border: 2px solid transparent;
+  background-color: transparent;
+  color: #333;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+ 
+}
+
+.pagination-button:hover:not(.active) {
+  background-color: #f1f1f1;
+  border-color: #ccc;
+}
+
+.pagination-button.active {
+  background-color:purple;
+  color: white;
+  border-color: purple;
+}
+
+.pagination-button:disabled {
+  cursor: not-allowed;
+  color: #ccc;
+}
+
+.pagination-button:disabled:hover {
+  background-color: transparent;
+  border-color: transparent;
+}

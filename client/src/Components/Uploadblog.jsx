@@ -20,6 +20,19 @@ function Uploadblog() {
     }
   }, [existingPost]);
 
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const fileType = file.type;
+      if (fileType === 'image/png' || fileType === 'image/jpeg' || fileType === 'image/jpg' || fileType==="image/webp") {
+        setImage(file);
+      } else {
+        alert('Only PNG, JPG, and JPEG images are allowed.');
+        e.target.value = '';
+      }
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -69,8 +82,8 @@ function Uploadblog() {
             <label>Image</label>
             <input
               type="file"
-              onChange={(e) => setImage(e.target.files[0])}
-              accept="image/*"
+              onChange={handleImageChange}
+              accept="image/png, image/jpeg, image/jpg, image/webp"
             />
           </div>
           <div className="form-group">
